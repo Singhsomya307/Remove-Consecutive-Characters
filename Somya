@@ -1,0 +1,16 @@
+class Solution{
+    public:
+    string removeConsecutiveCharacter(string s)
+    {
+        string a = "";
+        for (char ch:s)
+        {
+            if(a.size()==0 || a.back()!=ch)
+            {
+                a.push_back(ch);
+            }
+        }
+        
+        return a;
+    }
+};
